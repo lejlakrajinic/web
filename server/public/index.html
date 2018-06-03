@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<title>Go Sarajevo</title>
+		<!-- bootstrap css -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<!-- application css -->
+		<link href="app-content/app.css" rel="stylesheet" />
+	</head>
+	<body>
+		<!-- main app container -->
+		<div>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a class="navbar-brand" href="#">Go Sarajevo</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+						<a class="nav-item nav-link active" href="#/home">Home <span class="sr-only">(current)</span></a>
+						<a class="nav-item nav-link" href="#/login">Login</a>
+						<a class="nav-item nav-link" href="#/register">Register</a>
+						<a class="nav-item nav-link" href="#/hotels">Hotels</a>
+						<a class="nav-item nav-link" href="#/restaurants">Restaurants</a>
+						<a class="nav-item nav-link" href="#/blogs">Blogs</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="jumbotron">
+			<div class="container">
+				<div class="col-sm-8 col-sm-offset-2">
+					<ui-view></ui-view>
+				</div>
+			</div>
+		</div>
+		<!-- credits -->
+		<div class="text-center">
+			
+		</div>
+		<!-- angular scripts -->
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>
+		<!-- application scripts -->
+		<script src="app.js"></script>
+		<script src="app-services/authentication.service.js"></script>
+		<script src="app-services/hotels.service.js"></script>
+		<script src="app-services/restaurants.service.js"></script>
+		<script src="app-services/comments.service.js"></script>
+		<script src="app-services/blogs.service.js"></script>
+		<script src="home/index.controller.js"></script>
+		<script src="login/index.controller.js"></script>
+		<script src="register/index.controller.js"></script>
+		<script src="hotels/index.controller.js"></script>
+		<script src="hotels/add.controller.js"></script>
+		<script src="hotels/hotel.controller.js"></script>
+		<script src="restaurants/index.controller.js"></script>
+		<script src="restaurants/add.controller.js"></script>
+		<script src="restaurants/restaurant.controller.js"></script>
+		<script src="blogs/index.controller.js"></script>
+		<script src="blogs/add.controller.js"></script>
+	</body>
+</html>

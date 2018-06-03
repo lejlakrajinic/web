@@ -1,0 +1,10 @@
+<div class="col-md-6 col-md-offset-3">
+	<h1>Blogs</h1>
+	<a ui-sref="blogsAdd" class="btn btn-primary">Add a blog</a>
+	<br/>
+	<div ng-repeat="blog in vm.blogs">
+		<h3>{{blog.title}}</h3>
+		<span class="post-date">by {{blog.author}}</span>
+		<p>{{blog.text}}</p>
+	</div>
+</div>
